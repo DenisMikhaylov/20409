@@ -21,8 +21,8 @@
 3. Создайте разностные диски для `Lon-HOST11` и `Lon-HOST22`:
 
 ```powershell
-New-VHD -Path "C:\VMs\Lon-HOST11\Lon-HOST11.vhdx" -ParentPath "D:\BaseImages\base2025.vhdx" -Differencing
-New-VHD -Path "C:\VMs\Lon-HOST22\Lon-HOST22.vhdx" -ParentPath "D:\BaseImages\base2025.vhdx" -Differencing
+New-VHD -Path "C:\VMs\Lon-HOST11\Lon-HOST11.vhdx" -ParentPath "C:\vm\base2025.vhdx" -Differencing
+New-VHD -Path "C:\VMs\Lon-HOST22\Lon-HOST22.vhdx" -ParentPath "C:\vm\base2025.vhdx" -Differencing
 ```
 
 > **Проверка:**  
