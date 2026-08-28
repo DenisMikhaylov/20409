@@ -140,9 +140,9 @@ Test-Cluster -Node "Lon-HOST11", "Lon-HOST22" -ReportName "C:\ClusterValidationR
 
 2. Откройте созданный отчёт `C:\ClusterValidationReport.html` и убедитесь, что все тесты прошли с зелёным статусом (ошибок быть не должно). Если есть ошибки – исправьте их (обычно это проблемы с сетью, хранилищем или службой времени).
 
-3. Создайте кластер с именем, например, `HyperVCluster`, и назначьте ему статический IP‑адрес в вашей сети (например, `192.168.1.200`):
+3. Создайте кластер с именем, например, `HyperVCluster`, и назначьте ему статический IP‑адрес в вашей сети :
 ```powershell
-New-Cluster -Name HyperVCluster -Node "Lon-HOST11", "Lon-HOST22" -StaticAddress 192.168.1.200
+New-Cluster -Name HyperVCluster -Node "Lon-HOST11", "Lon-HOST22" -StaticAddress 172.16.0.60
 ```
 
 > **Проверка:**  
